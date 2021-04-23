@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	var exibeMensagem = function() {
+     if(true) { 
+         var escopoFuncao = 'Caelum'; 
+         let escopoBloco = 'Alura';
+
+        console.log(escopoBloco); // Alura 
+    } 
+    	console.log(escopoFuncao); // Caelum 
+    	console.log(escopoBloco); // essa msg nao sera exibida pq let nao foi inicializada
+	}
+		exibeMensagem(); 
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

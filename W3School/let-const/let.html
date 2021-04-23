@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript variavel let</h2>
+
+<p>Com <b>let</b>  , você não pode usar uma variável antes de ser declarada:</p>
+<p id="demo"></p>
+
+<script>
+try {
+  let carName; // deve inicializar a variavel p/ poder usar let
+  carName = "Volvo";
+  let carName;
+  document.getElementById("demo").innerHTML = carName;
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name + ": " + err.message;
+}
+</script>
+
+</body>
+</html>

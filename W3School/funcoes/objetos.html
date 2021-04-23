@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objetos</h2>
+
+<p id="x"></p>
+<p id="y"></p>
+<p id="z"></p>
+
+<script>
+// Create an object:
+var carro = {marca:"Fiat", modelo:"500", cor:"white"};
+
+// Display some data from the object:
+document.getElementById("x").innerHTML = "Marca do carro é " + carro.marca;
+
+
+var eu = {
+  firstName: "Guilherme",
+  ultimoNome: "adskfjadkfja",
+  age: 20,
+  corDoOlho: "Azul"
+};
+document.getElementById("y").innerHTML = "Meu nome é "  + eu.firstName + " " + eu.ultimoNome + " tenho "+  
+eu.age+ " anos " + " e a cor dos meus olhos é " + eu.corDoOlho;
+
+
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("z").innerHTML = person.fullName();
+
+
+</script>
+
+</body>
+</html>

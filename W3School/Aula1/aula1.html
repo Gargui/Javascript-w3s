@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+
+	<h2>Aula 1</h2>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Horario agora</button>
+	<p id="demo"></p>
+	<br>
+
+	<hr> 
+
+	<h2>Aula 2 - alterando html</h2>
+	<p id="conteudo"> conteudo sem alterar</p>
+
+	<button type="button" onclick='document.getElementById("conteudo").innerHTML = " Esse conteudo foi alterado "'>Alterar Conteudo</button>
+	<hr><br>
+	<h2>Alterando a imagem</h2>
+	<p>Nesse caso, o JavaScript altera o valor do atributo src (fonte) de uma imagem.</p>
+	<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Ligar a luz</button>
+	
+	<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+	<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Desligar a luz</button>
+	<hr><br>
+
+	<h2>Alterando estilos html - css</h2>
+	
+	<p id="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<button onclick="document.getElementById('texto').style.fontSize='20px'">alterar tamanho da fonte</button>
+	<hr><br>
+	<h2>Ocultando elementos Html</h2>
+
+	<p id='ocultando'>esse conteudo irá desaparecer</p>
+
+	<button onclick="document.getElementById('ocultando').style.display='none'" >Sumir conteudo</button>
+	<hr><br>
+	<h2>Aparecendo os elementos Html</h2>
+
+	<p id='aparecer' style="display: none">apareceu</p>
+
+	<button onclick="document.getElementById('aparecer').style.display='block'" >aparecer conteudo</button>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="document.getElementById('y').innerHTML=Date()">Que horas são?</button>
+
+<p id="y"></p>
+
+<hr>
+
+<button onclick="this.innerHTML=Date()">Que horas são?(altera botao)</button>
+
+<hr>
+
+<p>Feito dentro de uma função</p>
+
+<button onclick="displayDate()">Que horas são?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("x").innerHTML = Date();
+}
+</script>
+
+<p id="x"></p>
+
+<!-- <div onmouseover="this.style.backgroundcolor='red'">mydiv</div> -->
+<div onmouseover="myOverFunction()">
+  <p id="demo3">I will demonstrate onmouseover!</p>
+</div>
+</body>
+</html>
