@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String </h2>
+
+<p>Substitua "Microsoft" por "W3Schools" no parágrafo abaixo:</p>
+
+<button onclick="myFunction()">Tente</button>
+
+<p id="demo">Visite Microsoft!</p>
+<br>
+<button onclick="mudarMaiusculo()">Maiusculo</button>
+<p id="maior">tudo para maiuculo</p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Microsoft","W3Schools");
+  document.getElementById("demo").innerHTML = txt;
+}
+
+function mudarMaiusculo(){
+	var texto = document.getElementById("maior").innerHTML;
+	document.getElementById("maior").innerHTML = texto.toUpperCase();
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For/Of Loop</h2>
+
+<p>
+A instrução for / of percorre os valores de um objeto iterável.</p>
+
+<p id="carros"></p>
+
+<script>
+let cars = ["BMW", "Volvo", "Mini", "Mercedes", "Fiat"];
+let text = "";
+
+for (let x of cars) {
+  text += x + "<br>";
+}
+
+document.getElementById("carros").innerHTML = text;
+</script>
+
+</body>
+</html>
